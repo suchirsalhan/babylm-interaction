@@ -1,0 +1,24 @@
+# Configuration for reward model training
+
+# Model settings
+model_name: "bert-base-uncased"
+output_dir: "outputs/reward_model"
+logging_dir: "logs/reward_model"
+
+# Training settings
+num_epochs: 3
+batch_size: 32
+learning_rate: 5e-5
+warmup_steps: 500
+weight_decay: 0.01
+max_length: 512
+
+# Dataset settings
+dataset_path: "data/reward"
+train_ratio: 0.8
+val_ratio: 0.1
+
+# Evaluation settings
+eval_steps: 100
+save_steps: 1000
+logging_steps: 100 
