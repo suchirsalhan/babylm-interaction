@@ -12,6 +12,8 @@ This repository contains a custom implementation of PPO (Proximal Policy Optimiz
 ### Customization Setup
 The `CustomPPOTrainer` class uses `_setup` functions to configure different components based on the configuration parameters. These setups are defined in the trainer class and can be customized through the `CustomPPOConfig`:
 
+#### Example
+
 1. **Optimizer Setup** (`_setup_optimizer`):
    - Configures the optimizer based on `config.optimizer_name`
    - Default: AdamW optimizer
@@ -58,56 +60,13 @@ trainer = CustomPPOTrainer(
 )
 ```
 
-### Training Process
-1. The trainer uses a teacher model for knowledge distillation
-2. A student model learns from the teacher's outputs
-3. A reward model provides feedback for the PPO training
-4. Early stopping prevents overfitting
-5. Score processing ensures stable training
-
-## Key Features
-
-### 1. Knowledge Distillation
-- Teacher-student architecture for efficient model training
-- KL divergence-based distillation
-- Configurable temperature for soft targets
-
-### 2. Reward Processing
-- Score scaling and normalization
-- Configurable clipping
-- Reward model integration
-
-### 3. Training Stability
-- Early stopping based on KL divergence
-- Gradient clipping
-- Learning rate scheduling
-- Optimized CUDA memory usage
-
-### 4. Monitoring
-- Training statistics tracking
-- KL divergence monitoring
-- Reward statistics
-- Loss tracking
-
 ## Configuration Options
 
 ### PPO Configuration
 ```python
 config = CustomPPOConfig(
-    learning_rate=1e-5,          # Learning rate
-    batch_size=8,                # Batch size
-    mini_batch_size=4,           # Mini-batch size
-    gradient_accumulation_steps=1,# Gradient accumulation steps
-    optimize_cuda_cache=True,     # Optimize CUDA memory
-    early_stopping=True,         # Enable early stopping
-    target_kl=0.1,               # Target KL divergence
-    ppo_epochs=4,                # PPO epochs
-    max_grad_norm=1.0,           # Maximum gradient norm
-    init_kl_coef=0.2,            # Initial KL coefficient
-    adap_kl_ctrl=True,           # Adaptive KL control
-    use_score_scaling=True,      # Enable score scaling
-    use_score_norm=True,         # Enable score normalization
-    score_clip=None              # Score clipping value
+    custom_requirement_args
+    **PPOConfig_default_args
 )
 ```
 
@@ -124,59 +83,6 @@ config = CustomPPOConfig(
 - Should be on the same device as the trainer
 
 ### Reward Model
-- Must be a sequence classification model
+- A sequence classification model for now (from previous paper bert)
 - Should output a single value per sequence
 - Should be on the same device as the trainer
-
-## Best Practices
-
-1. **Device Management**
-   - Ensure all models are on the same device
-   - Use `device` parameter consistently
-   - Monitor device placement with debug prints
-
-2. **Memory Management**
-   - Use appropriate batch sizes
-   - Enable CUDA cache optimization
-   - Monitor memory usage
-
-3. **Training Stability**
-   - Start with conservative learning rates
-   - Use early stopping
-   - Monitor KL divergence
-   - Use score normalization
-
-4. **Debugging**
-   - Enable `CUDA_LAUNCH_BLOCKING=1` for better error reporting
-   - Monitor tensor shapes and devices
-   - Check input validation
-   - Use try-except blocks for better error handling
-
-## Common Issues and Solutions
-
-1. **CUDA Errors**
-   - Check device placement
-   - Verify tensor shapes
-   - Monitor memory usage
-   - Use appropriate batch sizes
-
-2. **Training Instability**
-   - Adjust learning rate
-   - Enable score normalization
-   - Use early stopping
-   - Monitor KL divergence
-
-3. **Memory Issues**
-   - Reduce batch size
-   - Enable gradient accumulation
-   - Use CUDA cache optimization
-   - Monitor memory usage
-
-## Contributing
-
-When adding new features or modifying existing ones:
-1. Update the appropriate `_setup` function
-2. Add configuration parameters to `CustomPPOConfig`
-3. Update documentation
-4. Add tests
-5. Ensure backward compatibility 

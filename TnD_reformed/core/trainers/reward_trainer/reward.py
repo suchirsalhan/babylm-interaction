@@ -88,7 +88,7 @@ class CustomRewardTrainer(TRLRewardTrainer):
         num_training_steps: int
     ) -> Optional[Any]:
         """Create the learning rate scheduler."""
-        from ...utils import WarmupLinearSchedule
+        from ...utils.utils import WarmupLinearSchedule
         return WarmupLinearSchedule(
             optimizer,
             warmup_steps=self.args.warmup_steps,
