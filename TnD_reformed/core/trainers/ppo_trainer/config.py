@@ -17,4 +17,6 @@ class CustomPPOConfig(PPOConfig):
     # teacher model generation config
     teacher_generation_args: Optional[Dict[str, Any]] = None
     
+    # custom interaction model
+    custom_interaction_model: Optional[str] = None
     
