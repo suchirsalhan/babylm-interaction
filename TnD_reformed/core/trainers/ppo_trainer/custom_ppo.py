@@ -41,6 +41,7 @@ class CustomPPOTrainer(PPOTrainer):
             child_model: Optional[PreTrainedModelWrapper] = None,
             # TODO: the reward model only needs to give a value, doesn't have to be a model it self
             reward_model: Optional[Any] = None,
+            ref_model: Optional[PreTrainedModelWrapper] = None,
             teacher_model: Optional[PreTrainedModelWrapper] = None,
             tokenizer: Optional[PreTrainedTokenizerBase] = None,
             teacher_tokenizer: Optional[PreTrainedTokenizerBase] = None,
@@ -57,9 +58,27 @@ class CustomPPOTrainer(PPOTrainer):
         self.teacher_tokenizer = teacher_tokenizer
         self.teacher_model = teacher_model
 
-        super(CustomPPOTrainer, self).__init__(config=config, model=child_model, ref_model=teacher_model, tokenizer=tokenizer, dataset=dataset, optimizer=optimizer, data_collator=collator,
+        super(CustomPPOTrainer, self).__init__(config=config, model=child_model, ref_model=ref_model, tokenizer=tokenizer, dataset=dataset, optimizer=optimizer, data_collator=collator,
                                                 num_shared_layers=num_shared_layers, lr_scheduler=lr_scheduler)
         self.device = self.accelerator.device
+        
+        # load custom interaction model
+        if self.config.custom_interaction_model:
+            if self.config.custom_interaction_model == "test":
+                from core.custom_components.custom_interaction.custom_test_model import CustomTestModel
+                self.custom_interaction_model = CustomTestModel(
+                    child_model=child_model,
+                    teacher_model=teacher_model,
+                    child_tokenizer=tokenizer,
+                    teacher_tokenizer=teacher_tokenizer,
+                    student_generation_args=self.config.child_generation_args,
+                    teacher_generation_args=self.config.teacher_generation_args,
+                    device=self.device
+                )
+            else:
+                raise ValueError(f"Custom interaction model {self.config.custom_interaction_model} not found")
+        else:
+            pass
 
     @PPODecorators.empty_device_cache()
     def step(
@@ -73,24 +92,34 @@ class CustomPPOTrainer(PPOTrainer):
         child_response_masks: Optional[List[torch.Tensor]] = None,
         teacher_response_masks: Optional[List[torch.Tensor]] = None,
     ):
-        # Step1: generate response from child model
-        # if queries already provided, skip this step, otherwise generate queries from input_prompts
-        if child_queries and child_responses:
-            pass
+        # Step0: generate interaction from custom interaction model if defined
+        if self.config.custom_interaction_model:
+            interaction_results = self.custom_interaction_model.batch_interact(input_prompts)
+            child_queries = interaction_results["child_queries"]
+            child_responses = interaction_results["child_responses"]
+            teacher_queries = interaction_results["teacher_queries"]
+            teacher_responses = interaction_results["teacher_responses"]
         else:
-            child_queries = [self.tokenizer.encode(text, return_tensors="pt").squeeze().to(self.device) for text in input_prompts]
-            #TODO: add generation args in config
-            child_generation_args = self.config.child_generation_args
-            child_responses = self.generate_child_response(child_queries, **child_generation_args)
+            # Step1: generate response from child model
+            # if queries already provided, skip this step, otherwise generate queries from input_prompts
+            if child_queries and child_responses:
+                pass
+            else:
+                child_queries = [self.tokenizer.encode(text, return_tensors="pt").squeeze().to(self.device) for text in input_prompts]
+                #TODO: add generation args in config
+                child_generation_args = self.config.child_generation_args
+                child_responses = self.generate_child_response(child_queries, **child_generation_args)
 
-        
-        # Step2: generate teacher response
-        if teacher_queries and teacher_responses:
-            pass
-        else:
-            teacher_queries = [self.teacher_tokenizer.encode(text, return_tensors="pt").squeeze().to(self.device) for text in input_prompts]
-            teacher_generation_args = self.config.teacher_generation_args
-            teacher_responses = self.generate_teacher_response(teacher_queries, **teacher_generation_args)
+            
+            # Step2: generate teacher response
+            if teacher_queries and teacher_responses:
+                pass
+            else:
+                teacher_queries = [self.teacher_tokenizer.encode(text, return_tensors="pt").squeeze().to(self.device) for text in input_prompts]
+                teacher_generation_args = self.config.teacher_generation_args
+                teacher_responses = self.generate_teacher_response(teacher_queries, **teacher_generation_args)
+                # teacher_queries = child_queries
+                # teacher_responses = child_responses
 
         # Step3: compute scores from reward model
         if scores:
@@ -173,6 +202,13 @@ class CustomPPOTrainer(PPOTrainer):
                     teacher_model_inputs,
                     return_logits=full_kl_penalty,
                 )
+                ref_logprobs, ref_logits_or_none, _, _ = self.batched_forward_pass(
+                    self.model if self.is_peft_model else self.ref_model,
+                    child_queries,
+                    child_responses,
+                    child_model_inputs,
+                    return_logits=full_kl_penalty,
+                )
         timing["time/ppo/forward_pass"] = time.time() - t
         
         # step6: compute final rewards, advantages, use scores and teacher, child logits and logprobs, default combine score and kl divergence
@@ -180,13 +216,11 @@ class CustomPPOTrainer(PPOTrainer):
             t = time.time()
             if full_kl_penalty:
                 active_full_logprobs = logprobs_from_logits(logits_or_none, None, gather=False)
-                teacher_full_logprobs = logprobs_from_logits(teacher_logits_or_none, None, gather=False)
+                ref_full_logprobs = logprobs_from_logits(ref_logits_or_none, None, gather=False)
 
-                rewards, non_score_reward, kls = self.compute_rewards(
-                    scores, active_full_logprobs, teacher_full_logprobs, masks
-                )
+                rewards, non_score_reward, kls = self.compute_rewards(scores, active_full_logprobs, ref_full_logprobs, masks)
             else:
-                rewards, non_score_reward, kls = self.compute_rewards(scores, all_logprobs, teacher_logprobs, masks)
+                rewards, non_score_reward, kls = self.compute_rewards(scores, all_logprobs, ref_logprobs, masks)
             timing["time/ppo/compute_rewards"] = time.time() - t
 
             t = time.time()
@@ -316,6 +350,7 @@ class CustomPPOTrainer(PPOTrainer):
         length_sampler: Optional[Callable] = None,
         batch_size: int = 4,
         return_prompt: bool = True,
+        reduce_prmopt: bool = True,
         **generation_kwargs,
     ):
         """
@@ -345,6 +380,9 @@ class CustomPPOTrainer(PPOTrainer):
                 return_prompt=return_prompt,
                 **generation_kwargs,
             )
+            if reduce_prmopt:
+                lens = [len(sublist) for sublist in query_tensor]
+                response = [s[l:] for s, l in zip(response, lens)]
         else:
             if len(query_tensor.shape) == 2:
                 raise ValueError(
@@ -368,6 +406,7 @@ class CustomPPOTrainer(PPOTrainer):
         length_sampler: Optional[Callable] = None,
         batch_size: int = 4,
         return_prompt: bool = True,
+        reduce_prmopt: bool = True,
         **generation_kwargs,
     ):
         """
@@ -399,6 +438,9 @@ class CustomPPOTrainer(PPOTrainer):
                 return_prompt=return_prompt,
                 **generation_kwargs,
             )
+            if reduce_prmopt:
+                lens = [len(sublist) for sublist in query_tensor]
+                response = [s[l:] for s, l in zip(response, lens)]
         else:
             if len(query_tensor.shape) == 2:
                 raise ValueError(
