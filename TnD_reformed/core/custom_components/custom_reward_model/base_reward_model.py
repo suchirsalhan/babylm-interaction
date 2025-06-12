@@ -20,22 +20,22 @@ class BaseRewardModel(ABC):
     @abstractmethod
     def compute_rewards(
         self,
-        child_queries: List[torch.Tensor],
-        child_responses: List[torch.Tensor],
-        teacher_queries: List[torch.Tensor],
-        teacher_responses: List[torch.Tensor],
-        child_tokenizer: PreTrainedTokenizerBase,
-        teacher_tokenizer: PreTrainedTokenizerBase,
+        child_queries: Union[List[torch.Tensor], List[str]],
+        child_responses: Union[List[torch.Tensor], List[str]],
+        teacher_queries: Union[List[torch.Tensor], List[str]],
+        teacher_responses: Union[List[torch.Tensor], List[str]],
+        child_tokenizer: Optional[PreTrainedTokenizerBase] = None,
+        teacher_tokenizer: Optional[PreTrainedTokenizerBase] = None,
     ) -> torch.Tensor:
         """Compute rewards for the given child and teacher responses.
         
         Args:
-            child_queries: List of query tensors for child model
-            child_responses: List of response tensors from child model
-            teacher_queries: List of query tensors for teacher model
-            teacher_responses: List of response tensors from teacher model
-            child_tokenizer: Tokenizer for the child model
-            teacher_tokenizer: Tokenizer for the teacher model
+            child_queries: List of query tensors or strings for child model
+            child_responses: List of response tensors or strings from child model
+            teacher_queries: List of query tensors or strings for teacher model
+            teacher_responses: List of response tensors or strings from teacher model
+            child_tokenizer: Tokenizer for the child model (required if inputs are tensors)
+            teacher_tokenizer: Tokenizer for the teacher model (required if inputs are tensors)
             
         Returns:
             torch.Tensor: Tensor of reward scores for each response

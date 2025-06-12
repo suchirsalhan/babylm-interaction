@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Union, Optional
 
 import torch
 from transformers import PreTrainedTokenizerBase, pipeline
@@ -25,33 +25,67 @@ class SentimentRewardModel(BaseRewardModel):
             model="lvwerra/distilbert-imdb",
             device=device
         )
-        self.sent_args = sent_args
+        self.sent_args = sent_args or {}
+    
+    def _decode_input(
+        self, 
+        input_data: Union[torch.Tensor, str], 
+        tokenizer: Optional[PreTrainedTokenizerBase] = None
+    ) -> str:
+        """Decode input data whether it's a tensor or string.
+        
+        Args:
+            input_data: Either a tensor to decode or a string
+            tokenizer: Tokenizer to use for decoding (required if input_data is tensor)
+            
+        Returns:
+            Decoded string
+        """
+        if isinstance(input_data, str):
+            return input_data
+        elif isinstance(input_data, torch.Tensor):
+            if tokenizer is None:
+                raise ValueError("Tokenizer is required when input_data is a tensor")
+            return tokenizer.decode(input_data.squeeze(), skip_special_tokens=True)
+        else:
+            raise ValueError(f"Input data must be str or torch.Tensor, got {type(input_data)}")
     
     def compute_rewards(
         self,
-        child_queries: List[torch.Tensor],
-        child_responses: List[torch.Tensor],
-        teacher_queries: List[torch.Tensor],
-        teacher_responses: List[torch.Tensor],
-        child_tokenizer: PreTrainedTokenizerBase,
-        teacher_tokenizer: PreTrainedTokenizerBase,
+        child_queries: Union[List[torch.Tensor], List[str]],
+        child_responses: Union[List[torch.Tensor], List[str]],
+        teacher_queries: Union[List[torch.Tensor], List[str]],
+        teacher_responses: Union[List[torch.Tensor], List[str]],
+        child_tokenizer: Optional[PreTrainedTokenizerBase] = None,
+        teacher_tokenizer: Optional[PreTrainedTokenizerBase] = None,
     ) -> List[torch.Tensor]:
         """Compute rewards based on sentiment analysis of combined query and response.
         
         Args:
-            child_queries: List of query tensors for child model
-            child_responses: List of response tensors from child model
+            child_queries: List of query tensors or strings for child model
+            child_responses: List of response tensors or strings from child model
             teacher_queries: Not used in this implementation
             teacher_responses: Not used in this implementation
-            child_tokenizer: Tokenizer for decoding child model outputs
+            child_tokenizer: Tokenizer for decoding child model outputs (required if inputs are tensors)
             teacher_tokenizer: Not used in this implementation
             
         Returns:
-            torch.Tensor: Tensor of sentiment scores for each response
+            List of sentiment score tensors for each response
         """
-        child_query_texts = [child_tokenizer.decode(q.squeeze()) for q in child_queries]
-        child_response_texts = [child_tokenizer.decode(r.squeeze()) for r in child_responses]
+        # Check if we need tokenizers for tensor inputs
+        needs_child_tokenizer = any(isinstance(item, torch.Tensor) for item in child_queries + child_responses)
+        
+        if needs_child_tokenizer and child_tokenizer is None:
+            raise ValueError("child_tokenizer is required when child inputs contain tensors")
+        
+        # Decode texts (handles both tensor and string inputs)
+        child_query_texts = [self._decode_input(q, child_tokenizer) for q in child_queries]
+        child_response_texts = [self._decode_input(r, child_tokenizer) for r in child_responses]
+        
+        # Combine query and response texts
         texts = [q + r for q, r in zip(child_query_texts, child_response_texts)]
+        
+        # Get sentiment scores
         sentiments = self.sentiment_pipe(texts, **self.sent_args)
         rewards = [
             item["score"]
@@ -59,7 +93,6 @@ class SentimentRewardModel(BaseRewardModel):
             for item in output
             if item["label"] == "POSITIVE"
         ]
-        rewards =[torch.tensor(reward) for reward in rewards]
+        rewards = [torch.tensor(reward) for reward in rewards]
                 
-            
         return rewards

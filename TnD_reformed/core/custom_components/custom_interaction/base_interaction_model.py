@@ -94,7 +94,8 @@ class BaseInteractionModel(ABC):
     def decode_tokens(
         self,
         tokens: torch.Tensor,
-        is_child: bool = True
+        is_child: bool = True,
+        skip_special_tokens: bool = True
     ) -> str:
         """Decode tokens using the appropriate tokenizer.
         
@@ -106,7 +107,7 @@ class BaseInteractionModel(ABC):
             Decoded text string
         """
         tokenizer = self.child_tokenizer if is_child else self.teacher_tokenizer
-        return tokenizer.decode(tokens, skip_special_tokens=True)
+        return tokenizer.decode(tokens, skip_special_tokens=skip_special_tokens)
     
     def encode_text(
         self,
