@@ -59,8 +59,8 @@ class DialogueInteractionModel(BaseInteractionModel):
         Your task is to generate a high-quality completion of the partial dialogue.
         Take reference from the child continuation, make a continuation that is of similar length and topic but more coherent, fluent, grammatically correct and more contextually appropriate.
         If the child's continuation is gibberish, you should generate a completion that is coherent and contextually appropriate.
-        Your completion should be one round conversation as A or B in the dialogue, dont generate multiple rounds of conversation.
         You should only provide your own completion without any added commentary or feedback.
+        Dont repeat the partial dialogue, but do continuation of the dialogue.
         """
     
 #     def _format_child_prompt(self, partial_dialogue: str) -> str:
@@ -196,7 +196,7 @@ class DialogueInteractionModel(BaseInteractionModel):
         self,
         input_prompts: List[Union[str, Dict[str, str]]],
     ) -> Dict[str, List[Union[torch.Tensor, str]]]:
-        """Process multiple partial dialogues through child and teacher models.
+        """Process multiple partial dialogues through child and teacher models in batches.
         
         Args:
             input_prompts: List of partial dialogues, where each is either a string or a dict
@@ -215,18 +215,99 @@ class DialogueInteractionModel(BaseInteractionModel):
             - teacher_completions: List of teacher completion texts
             - partial_dialogues: List of original partial dialogues
         """
-        results = [self.interact(prompt) for prompt in input_prompts]
+        # Extract partial dialogues from input prompts
+        partial_dialogues = []
+        for prompt in input_prompts:
+            if isinstance(prompt, str):
+                partial_dialogues.append(prompt)
+            else:
+                partial_dialogues.append(prompt.get('dialogue', prompt.get('student', '')))
+        
+        # Step 1: Batch process child model
+        # Tokenize all child prompts with automatic padding
+        child_batch_encoding = self.child_tokenizer(
+            partial_dialogues,
+            padding=True,
+            return_tensors="pt",
+            truncation=True
+        ).to(self.device)
+        
+        # Generate child responses in batch
+        child_batch_outputs = self.child_model.generate(
+            input_ids=child_batch_encoding['input_ids'],
+            attention_mask=child_batch_encoding['attention_mask'],
+            generation_config=self.student_generation_config
+        )
+        
+        # Decode child responses and extract continuations
+        child_continuations = []
+        decoded_child_responses = []
+        child_inputs_list = []
+        
+        for i, child_response in enumerate(child_batch_outputs):
+            full_child_response = self.decode_tokens(child_response, is_child=True)
+            child_continuation = self._extract_response_content(full_child_response, partial_dialogues[i])
+            child_continuations.append(child_continuation)
+            decoded_child_responses.append(full_child_response)
+            # Store individual input tensors for compatibility
+            child_inputs_list.append(child_batch_encoding['input_ids'][i])
+        
+        # Step 2: Batch process teacher model
+        # Create teacher prompts with reference to child continuations
+        teacher_prompts = []
+        for i, dialogue in enumerate(partial_dialogues):
+            teacher_prompt = self._format_teacher_prompt(dialogue, child_continuations[i])
+            teacher_prompts.append(teacher_prompt)
+        
+        # Tokenize all teacher prompts with automatic padding
+        teacher_batch_encoding = self.teacher_tokenizer(
+            teacher_prompts,
+            padding=True,
+            return_tensors="pt",
+            truncation=True
+        ).to(self.device)
+        
+        # Generate teacher responses in batch
+        teacher_batch_outputs = self.teacher_model.generate(
+            input_ids=teacher_batch_encoding['input_ids'],
+            attention_mask=teacher_batch_encoding['attention_mask'],
+            generation_config=self.teacher_generation_config
+        )
+        
+        # Decode teacher responses and extract completions
+        teacher_completions = []
+        decoded_teacher_responses = []
+        teacher_inputs_list = []
+        
+        for i, teacher_response in enumerate(teacher_batch_outputs):
+            full_teacher_response = self.decode_tokens(teacher_response, is_child=False, skip_special_tokens=False)
+            teacher_completion = self._extract_response_content(full_teacher_response, teacher_prompts[i])
+            teacher_completions.append(teacher_completion)
+            decoded_teacher_responses.append(full_teacher_response)
+            # Store individual input tensors for compatibility
+            teacher_inputs_list.append(teacher_batch_encoding['input_ids'][i])
+        
+        # Decode queries for completeness
+        decoded_child_queries = []
+        for i, child_inputs in enumerate(child_inputs_list):
+            decoded_query = self.decode_tokens(child_inputs, is_child=True)
+            decoded_child_queries.append(decoded_query)
+            
+        decoded_teacher_queries = []
+        for i, teacher_inputs in enumerate(teacher_inputs_list):
+            decoded_query = self.decode_tokens(teacher_inputs, is_child=False)
+            decoded_teacher_queries.append(decoded_query)
         
         return {
-            'child_queries': [r['child_query'] for r in results],
-            'child_responses': [r['child_response'] for r in results],
-            'teacher_queries': [r['teacher_query'] for r in results],
-            'teacher_responses': [r['teacher_response'] for r in results],
-            'decoded_child_queries': [r['decoded_child_query'] for r in results],
-            'decoded_child_responses': [r['decoded_child_response'] for r in results],
-            'decoded_teacher_queries': [r['decoded_teacher_query'] for r in results],
-            'decoded_teacher_responses': [r['decoded_teacher_response'] for r in results],
-            'child_continuations': [r['child_continuation'] for r in results],
-            'teacher_completions': [r['teacher_completion'] for r in results],
-            'partial_dialogues': [r['partial_dialogue'] for r in results]
+            'child_queries': child_inputs_list,
+            'child_responses': [response for response in child_batch_outputs],
+            'teacher_queries': teacher_inputs_list,
+            'teacher_responses': [response for response in teacher_batch_outputs],
+            'decoded_child_queries': decoded_child_queries,
+            'decoded_child_responses': decoded_child_responses,
+            'decoded_teacher_queries': decoded_teacher_queries,
+            'decoded_teacher_responses': decoded_teacher_responses,
+            'child_continuations': child_continuations,
+            'teacher_completions': teacher_completions,
+            'partial_dialogues': partial_dialogues
         } 

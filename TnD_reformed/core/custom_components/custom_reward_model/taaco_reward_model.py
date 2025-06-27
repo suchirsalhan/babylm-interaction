@@ -9,7 +9,7 @@ from transformers import PreTrainedTokenizerBase
 from .base_reward_model import BaseRewardModel
 
 # Add path to access TAACO processor
-taaco_path = "/home/administrator/projects/babylm_reformed/babylm-interaction/TnD_reformed/experiments/formal_experiment1/TAACO"
+taaco_path = "/workspace/TAACO"
 if taaco_path not in sys.path:
     sys.path.append(taaco_path)
 
@@ -215,6 +215,24 @@ class TAACORewardModel(BaseRewardModel):
         else:
             raise ValueError(f"Input data must be str or torch.Tensor, got {type(input_data)}")
     
+    def compute_individual_scores(self, responses:Union[List[torch.Tensor], List[str]], tokenizer: Optional[PreTrainedTokenizerBase]) -> List[torch.Tensor]:
+        """Compute individual scores for a list of responses.
+        
+        Args:
+            responses: List of response tensors or strings
+            tokenizer: Tokenizer to use for decoding (required if responses are tensors)
+        """
+        scores = []
+        for i in range(len(responses)):
+            if isinstance(responses[i], torch.Tensor):
+                response_text = self._decode_input(responses[i], tokenizer)
+            else:
+                response_text = responses[i]
+            metrics = self._process_text_with_taaco(response_text)
+            score = self._calculate_composite_score(metrics)
+            scores.append(score)
+        return scores
+        
     def compute_rewards(
         self,
         child_queries: Union[List[torch.Tensor], List[str]],
