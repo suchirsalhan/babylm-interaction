@@ -213,3 +213,37 @@ Check that the output file contains:
 
 **Important**: The calls to `compleximeter.py` and the analysis scripts are **exactly the same** regardless of whether your dataset already contains levels or not. The only difference is in how you modify `process_complexity_data.py` to load your data.
 
+
+## 5. Filtering relevant metrics for babylm
+After running the main script, use only the following metrics for the BabyLM challenge:
+
+- **TAACO Metrics**:
+  - `noun_ttr`
+  - `verb_ttr`
+  - `adj_ttr`
+  - `lemma_ttr`
+  - `bigram_lemma_ttr`
+  - `trigram_lemma_ttr`
+  - `all_connective`
+
+- **Complexity Metrics**:
+  - `average_sentence_length`
+  - `pronouns_density`
+  - `first_person_pronouns_density`
+  - `third_person_pronouns_density`
+  - `verbs_density`
+  - `adverbs_density`
+  - `type_token_ratio`
+  - `mattr`
+  - `content_word_overlap_adjacent`
+  - `noun_overlap_adjacent`
+  - `argument_overlap_adjacent`
+  - `stem_overlap_sent`
+  - `percentage_of_words_above_b1_level`
+  - `average_cefr_level`
+  - `average_concreteness`
+  - `word_concreteness_cox`
+  - `referential_cohesion_cox`
+  - `deep_causal_cohesion_cox`
+
+
