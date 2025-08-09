@@ -1,0 +1,16 @@
+pandas==2.1.4
+spacy==3.7.2
+nltk==3.8.1
+textstat==0.7.3
+taaled==0.32
+cefrpy==1.0.1
+conceptnet-client==0.1.0
+networkx==3.2.1
+requests==2.31.0
+numpy==1.26.3
+inflect==7.0.0
+truecase==0.0.12 
+owlready2
+torch
+transformers
+disco-score @ git+https://github.com/AIPHES/DiscoScore.git 
