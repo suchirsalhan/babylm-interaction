@@ -1,6 +1,6 @@
 # Text Complexity Analysis Pipeline
 
-This repository contains a comprehensive text complexity analysis system that calculates over 100 different complexity metrics for text data. The system is designed to analyze text complexity across different simplification levels and generate correlations and visualizations.
+Here we calculate over 100 different complexity metrics for text data. The system is designed to analyze text complexity across different simplification levels and generate correlations and visualizations.
 
 ## Overview
 
@@ -76,8 +76,6 @@ The `compleximeter.py` system expects a **list of dictionaries** where each dict
 - **`id`**: A unique identifier for the text (string or number)
 - **`text`**: The actual text content to analyze (string)
 
-### Optional Fields:
-- **`level`**: Complexity level (integer, typically 0-10 where 0 is original and 1-10 are simplifications)
 
 ### Example Dataset Structure:
 ```python
@@ -91,16 +89,6 @@ dataset = [
         'id': 'text_001_simplified_1', 
         'text': 'This is a simplified version of the text.',
         'level': 1
-    },
-    {
-        'id': 'text_001_simplified_2',
-        'text': 'This is a more simplified version.',
-        'level': 2
-    },
-    {
-        'id': 'conversation_001',
-        'text': 'A longer text with multiple sentences that will be processed for various complexity metrics.',
-        'level': 0
     }
 ]
 ```
@@ -186,15 +174,6 @@ def load_and_merge_datasets():
     return dataset
 ```
 
-### Analysis Configuration
-Edit `analysis/compute_level_correlations.py`:
-
-```python
-# Update these variables at the top of the file
-WIRED = False  # Set to True for different dataset types
-BASE_DIR = "your_output_directory/"
-INPUT_FILE = "your_complexity_results.csv"
-```
 
 ### ComplexiMeter Configuration
 The main complexity analysis engine (`compleximeter.py`) can be configured by modifying:
@@ -233,69 +212,4 @@ Check that the output file contains:
 - `complexity_results2.csv` - Intermediate results from ComplexiMeter processing (in current directory)
 
 **Important**: The calls to `compleximeter.py` and the analysis scripts are **exactly the same** regardless of whether your dataset already contains levels or not. The only difference is in how you modify `process_complexity_data.py` to load your data.
-
-## 5. Generating Correlations and Plots
-
-### Step 1: Run Correlation Analysis
-```bash
-cd analysis
-python compute_level_correlations.py
-```
-
-### Step 2: Review Generated Files
-The analysis will create:
-
-#### Correlation Results:
-- `level_correlations.csv` - All levels (0-10)
-- `level_correlations_no_zero.csv` - Excluding level 0
-- `level_correlations_split_groups.csv` - Split analysis (1-5 vs 6-10)
-
-#### Visualization Files:
-- `plots/` directory with:
-  - Individual metric plots
-  - Boxplots for each metric
-  - Grouped visualizations
-  - Trimmed versions (outlier removal)
-
-### Step 3: Customize Analysis
-Modify `analysis/compute_level_correlations.py` to:
-- Change correlation methods (Pearson, Spearman, etc.)
-- Adjust plot styles and colors
-- Add new visualization types
-- Filter specific metrics for analysis
-
-## 6. Advanced Usage
-
-### Batch Processing
-For large datasets, use the chunked version:
-```bash
-python compleximeter_chunked.py
-```
-
-### Cluster Processing
-Use the SLURM scripts for cluster environments:
-```bash
-sbatch run_on_euler.slurm
-# or
-sbatch run_on_euler_optimized.slurm
-```
-
-
-
-
-## 7. Output Interpretation
-
-### Correlation Results
-- **Pearson correlation**: Linear relationships between metrics and complexity levels
-- **Spearman correlation**: Rank-based relationships between metrics and complexity levels
-- **P-values**: Statistical significance of correlations
-- **Sample sizes**: Number of valid data points for each metric
-
-
-### Visualization Types
-- **Individual plots**: Each metric vs. complexity level
-- **Boxplots**: Distribution of metric values by level
-- **Grouped plots**: Multiple metrics comparison
-- **Trimmed plots**: Outlier-removed versions
-
 
