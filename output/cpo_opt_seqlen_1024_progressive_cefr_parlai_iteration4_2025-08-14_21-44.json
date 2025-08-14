@@ -1,0 +1,602 @@
+[
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n Well, let's not say it. \n You're a human being.\n - That's it?\n - Yes.\n But I'm not one"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n It's a good job you've found out, I'm sure.\n We'll have to think about it.\n You're a very good teacher."
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n That's the reason I'm here.\n I'm sorry.\n I guess I should be going.\n I was wondering if you were willing to do"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n I'm not sure what you mean, but I would like to live with someone who will not be my own father.\n I would like to live with"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n What do we have to do?\n I don't know what I think it is to be a jerk.\n It's not my business.\n Hey"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n The one who doesn't even know he's the leader.\n He just wants to get along.\n He's a member of the group.\n He"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n She wants to tell the story.\n What about the house?\n There's a lot of people who just don't know the answer.\n It's"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n You are welcome to take a look at the book.\n You know what?\n What does this book say?\n -This is the only book I"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n This is just a new set of instructions!"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n I don't understand.\n I mean, I know all about you.\n You think I'm a bad person?\n I think you're a bad"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n Um, I don't know if I can just ask you some questions.\n You know, I like that kid that is just the best.\n I mean, I'm just...\n"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n I like to live in the woods.\n I like to play in the woods.\n I like to play in the woods.\n Yeah? \n What's your favorite thing in the world?"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n Don't you?\n I'll be able to take care of myself.\n -You like my job.\n -You like it?\n You like it?\n I'm not good enough"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n= = = childes/CHILDES_NA/HSLLD/HV3/TP/britp3.cha = = =\n [Home Visit 3]\n *MOT:\t"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n I love to do this.\n= = = Peyton, Arkansas = = =\n Peyton is a city in the US state of Arkansas.\n= ="
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n I like to swim.\n I know you like to swim, I know you like to swim.\n But I like to do it.\n I'm not a swimmer.\n I'm"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n - I can't. \n I like to dance.\n - What do you like to do?\n - What do you like to do?\n - What do you like to do?\n"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n I have to be nice to the girls.\n How about we talk about your mother?\n I want to talk to you.\n You're a good student.\n What do you like to"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n I'm a little sketchy.\n Oh, I'm not too skated.\n It's not that I'm not used to being skated.\n I am very skated."
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n I love to do a great job in summer, and I love to do it.\n I like to do a wonderful job.\n I love to do the best I can.\n I love"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n What?\n -She's a woman.\n -She's not tall.\n She's young, but she has a good memory.\n It's what the girl looks like.\n She's a woman who"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n (sad) Yeah. \n No, it's not like I am.\n You look great.\n I'm really, really glad you asked.\n I hope you like it.\n What are you doing"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n She's a girl?\n Is she a girl?\n Yeah.\n The girl with the big mustache.\n So you know who she is?\n Yeah.\n Okay, I've been here for years"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall? \n -No, I'm not tall.\n I'm not much, I'm pretty.\n I am just a girl.\n I'm not much.\n You know what?\n I'm glad you came back"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n - I don't know her.\n - She's not tall.\n - I'm sorry.\n Did you know that you were her girlfriend?\n - I'm sorry.\n - No, it's okay"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n What is her name?\n I know what I'd like to do with her.\n Is she with you?\n No.\n I am sorry for your loss.\n I don't understand.\n You were"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n - A little.\n What is her name?\n She's retired.\n It's a pleasure to meet you.\n - We're here to see you.\n - Thank you.\n - Do you like"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n She's not much older than you.\n I'm sure she's a little bit older than you.\n She's pretty much a little bit...\n I think she's the type.\n That's all."
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall? \n She's tall.\n I know.\n I'm sorry to hear that.\n I'm sorry. \n What's going on?\n You know, it's hard for me to have to find somebody who I"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n No, she's not tall. \n She's a child.\n I'm sorry.\n - What's going on?\n - I have to go.\n - OK, what's wrong?\n - You"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n The tallest? \n I'm not sure.\n How old are you?\n I'm 5. \n I am 4.\n Why am I a 4 year old?\n We can't afford to be alone"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n - No, it's not him.\n It's not him. \n He died in the fire.\n That's why I'm here.\n I'm sure you are.\n And this is my baby's"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall? \n Is he tall? \n Are you tall?\n -Yes!"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n Yeah, he's tall.\n Do you know him?\n I used to be in the army.\n And you're an officer of the military?\n I'm one of the oldest.\n He used to"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n Yes, the boy who used to live at the end of the world.\n= = = childes/CHILDES_NA/Gelman/2014-IndDiff/03C-R1"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall? \n You were right.\n I'm very proud of you.\n Thank you, Tina.\n That's my name.\n= = = Hylar O'Riley = = =\n H"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n I'm almost two years old.\n Did you take him on?\n He's gonna come to the funeral.\n He'll be back as soon as he gets home.\n We all know that there are some"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n -Yes.\n -Are you sure?\n -I think so. \n I'm glad you liked it.\n -I think it's a very good story.\n But I'm glad you liked it."
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n I was wondering.\n -I'm sorry, sir.\n -l'm sorry.\n Sorry to bother you, sir.\n He's here to see you.\n Oh, right.\n Uh, I"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n I'm sorry, I just had to check the house.\n I just have a favor.\n Do you want to go and see the police?\n They'll see you there.\n What?\n Do you"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n Uh, I'm a doctor.\n I'm a big fan of you.\n Really?\n Yeah.\n - What about you?\n - Who?\n Your boyfriend.\n - Yeah.\n - I"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n -Yes. \n And I'm not sure.\n -You're the oldest? \n I'm sorry, but I'm just glad I got you.\n -Are you sure? \n Really?\n -Yeah"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n Yeah. \n That's him.\n (door opens)\n (gasps)\n (grunts)\n Oh.\n Oh, my God!"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n Yes.\n I'm sorry. \n I should have known.\n I'm sorry. \n I should have known you were in the high school.\n I'm sorry.\n It's okay. \n I love"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n -It's a little small.\n -I know. \n But do you wanna be taller?\n -I do. \n What are you doing?\n -What's your name? \n What's your name"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n - Yes. \n Yes, I am.\n - What is the difference between a tall man and a tall man?\n - I don't know.\n What? \n I'm a tall man?\n -"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n -He's tall.\n -Yeah. \n The boy's tall.\n Yeah, I can remember seeing him in the show.\n -He was tall.\n -Yeah.\n He was tall.\n"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n My father was a musician.\n I was born in 1904.\n And you?\n= = = childes/CHILDES_NA/Braunwald/0diary/010718.cha = ="
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n Yes.\n I'm his mother.\n His name is Ezra.\n His mom is an actress.\n That's great.\n Do you have a favorite movie?\n What's your favorite movie?"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_1024_progressive_cefr_parlai_iteration4",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n Yeah, that's my dad.\n He's gonna be great.\n It's my mom.\n She told me the first time I saw her.\n I guess you have to be careful.\n I am"
+    }
+]

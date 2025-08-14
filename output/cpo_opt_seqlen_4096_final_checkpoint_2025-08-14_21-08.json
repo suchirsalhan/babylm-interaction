@@ -1,0 +1,602 @@
+[
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n's get of to can and this?\n, you, and the one, and?'t it we and I, you the\n, so know\n"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n\n.'t a's,, had. know to is in your.\n I do know on you think is. is going I to you that I"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?. and a one?\n You.\n I don't, he it you? can, not not.\n you for I was Oh. \n, that"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?'t you were a the, that to you, and and not we to be be I have, to I know and, I had to, to we just"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?'t know's they., it the with, and and of of his we to, the to make the in the of the. I think we have't"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things? \n her., I the I be to be her to, it's the,, for's be the way,, but my man a a a,"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?'t?. not's have it,, to a we was I I'm a be to to think you, but it not, it to the.\n"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things? to know of the the time you, it we, and they a's a be take to at is to to the to, in a a.\n I"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n said that,'s.\n But is in do about in it you can.\n, on you just? be the the, and you think we,"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things? you'd want it what do, I\u2019 a to a be. to think of to it,, and a be, I, and as that a not"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer? and. \n - \" the she there. \n *MOT:\twhat we? \n *MOTI:\tyeah.:\tyou. \n *MOT:\tyou. \n *CHI:"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer? be not's there in it of and they the, and see, and, a, but and the a the in in in I.\n a, and,, of a she. HeH"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer? the's up.\n And and in the.\n's. \n I's just the the same a that've a's a?\n.\n to be him?\n *. \n, and"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer? the you be a the to you the and and. you to. was.\n that get you?\n The's the?\n\n that's this,?\n It is's not, he"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n had they, and the of we been you the to, and up I said.\n\n you, he,?\n you?'ve No, you that, but I think.\n You"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n the the, and the. and, and he him the would to.\n \"\n The of't the the from, and.\n that was a them for the I had you of't"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer? a be the, and and that a to were a they to and I think he,, the I\n \"but, he it you's the end him.\n all and that, and a"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n you was a they had they he a and was you going to be that?\n and to be you.\n's to do be the I do? not do it but a that the I"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer? other they they a she her other. the, and and the we that of we all do a be I't him it, and to to make, and the we do, I just not are"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?. you.\n was all we.\n I said.\n I've it's you have\n, and.\n you think you've get that.\n He?\n But can think you think"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n [.\n * what we to a that I'm all.\n *, the *FAT to say's your't, you. to go.\n, but't it we you make,?\n\t\n"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?I be the't I the? \n to you the.\n I'm all. you can come I know?\n\n So me it what a I'm't you\n How and I want, I\n I,"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n a,, that we. \n.\n. can to do to do..\n I don't don't are to.\n's just the!"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall? \n the to of [ of. a you the. it that.. not'll are you you a. know it not you'll be's out not me you'm have you to have that you don't you know"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n [ they you was you think are I\n it can to you think sorry a he I do this a get? a is I think not be you a go and it with I think way a.\n What're"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall? \n [ *MOT * you can't the that the mother in\n *MOT't not a you can get make me't have\n Okay.\n -'t we't go.\n I need You're, you want"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n What you and? all you going's that it a a we've be What.'m that.\n in's a a, but, a little think know we know my in it.\n he I've go"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n and. \n He're to, it that know you, what, the The you?\n a all.'m going to to, is. \n And!"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?I\n to.\n's a and for's to you\n I know is., I'm not to come.\n,, and tell it. \n can't't think.\n That think way know you're"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n * you'll he do we.\n the head!"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?I, the\n \"?\n You they? \n I\n A, don?oh?\n the little't you all and we want aboutMOT't. know your I?\n I have *'s a?\n"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?:\t it:\tI can the.\n *MOT:\tyeah you to you the *:\tand just?\n *CHI're you'myou can't. \n *:\tnow? \n *MOT"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n. \n  * it and it. \n I think the \n * the \n [ *MOTI think a oneI did *MOT I know:\t you see. \n.\n *MOT:\t's:"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n, the and - the\n but is it of to the\n.'t do be the.\n Yes.\n's got them. like I get\n think him.\n to's not and the, if It"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?and.\n\t,'s and?\n he, come the's,'s, it's a's not's so going a bit.\n but will the had have this the a bit you was the, a do"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall? \n. on \" was see. can had him's go, and you had no what not you will you're your's you think,.'d a see. think a I am I do you know I get."
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n.\n *\t:\tand. \n:\t. \n *MOT:\tI.\n *FAT [. \n. don:\tthat's that a you? \n *MOT:\tyes it."
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?'t to see and.\n Well is of that have for I we'll't know and we, what would and and of the, it of I.\n think.\n He a,. \n I\n for to"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall? \n it to see this a the.\n What and not. \n and. me I'll that, Yeah't the they you.\n are's all the.'m it the it a little I know\n You know"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n:,:\tI's in a think not, him I'm the? \n *GMA:\tis go is? \n *:\tokay. \n *MOT:\t:\tI. \n *CHI"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n don't do it we be to, and head were.\n Well to I\n I know you know.\n the it that you that have got, I think that you for I\n What that do you'll"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?no I. want I know you that the it that I you'd's a, and the you've do you just not.\n \"'ve a\n Why, the. \n. \n [ So to be it is"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?I the what that go't've!"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n\n *MOT * they. \n!"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n * the\t\n I've that you know. \n\n\t. \n:\toh I.\n *CHI not *MOT:\t. \n *MOT:\tyou can:\tare. \n *MOT"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?'t: going I want to and I to it, and you'll can the. to I want like\n.\n?'m to see.\n I'm not. I've.\" I got We's a a a"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?I've.\n I is and, what you,, to think, it, he your been, it. \n and it, we?\n?\n.\" the is the, I\n No to think.\n"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n \n,\t.\n\t it and they that you that the,? you say of, I.\n I think good that it, I think? were,,\n I can do you'll I'll know"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n\tand * *, and. \n *MOTMOT:\tcan it *I's you're:\tcan a:\tI? do!"
+    },
+    {
+        "model": "Talking-Babies/cpo_opt_seqlen_4096_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?what can's, and's a going.\n.\n *CHI:\tbut? \n * get you like itwhat.'t it. think a. know I got that what you like you see, and?"
+    }
+]

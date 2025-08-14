@@ -1,0 +1,602 @@
+[
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n Who's it registered?\n A friend.\n A friend?\n Yeah, a friend.\n He's a friend.\n He's a friend."
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n No, no, he has to sell his house.\n Yeah, so he sells his house?\n Yeah, he sells his house, and"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n Well it's not really one big town or anything.\n What do you think about the house, the house, what do you think about the home?"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n We're not interested.\n What do we call somebody who's in the bathroom?\n Are you going to go to the bathroom or are you going to"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n That's right, yeah.\n Yeah, right.\n So, it's not just about, like, a college, like, a college, like"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n What's the point?\n There's the point.\n We'll just drive off and get them to take the car.\n But it's not gonna"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n Well, I think they're like allergic to something else.\n It's been, like, three months.\n - We're still in the"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n Well, it's not really the best idea to talk to anyone else, but it's just, well, I mean, it's not really the least"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n I think it's a good idea because the people who are using it are just the two of you.\n And I think it's good to see how"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do we call someone who goes into other people's houses and steals things?\n What do you call someone who steals things?\n A man who steals things that steals things that steals things that steals from him."
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n What are you doing here?\n Well, I got a few, I got a few.\n I got a lot.\n What's the matter?\n - I thought you'd like it"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n Well, I like to go to the beach, I like to go in the sun, and I like to go to the beach, and I really enjoy it.\n Well, I've been"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n I like to play with the kids.\n I'm just not sure what's going on, but I really like the kids.\n I'm not sure if it's the kids that have the"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n What do you like to do in winter?\n Well, I've had to, I've got to get my own sports kit from the factory.\n What's that, a little tennis rack"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n You know, like, a ballet group, like a, a, a, a, a, a, a, a, a theater group.\n - I like doing ballet.\n -"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n Do you have a boyfriend or not?\n No.\n Yeah, you do.\n So, what do you like to do?\n I've been here for years.\n What do you"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n Well, a lot of kids are having summer holidays.\n They were all out for skiing.\n Oh, I see.\n That's true.\n They were having a real hard time."
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n There are lots of them, don't you think?\n Yeah, I like to get a really good box and I've tried to get a lot of them, but I've been spending a"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n Well I was, I used to play football in the, in the Summertime, in the summer, I used to play, that's when I got, I used to go in the Summer"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "What do you like to do in summer?\n Well, I think we'll try and find a lot of time to get some fresh air.\n I like to do my own laundry, it's a little bit messy, I'm afraid."
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n I know, she's tall.\n Oh, yeah? \n Well, I, uh,\n I know my cousin, uh, she's, uh, she's very cool, and I'm sorry she's"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n She's not tall, she's not tall.\n What girl?\n Is she tall?\n No, she's pretty.\n I've been thinking about it since I was born.\n -I didn't"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n I think it's a girl.\n Oh, yeah.\n A girl?\n What do you mean, a girl?\n Well, you know, when I was a kid, I had to tell my mother"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n -Not exactly tall, but I think it is the girl.\n -She's a young girl, isn't she?\n -I think she's the woman.\n -I think she's a woman."
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n Oh,no.\n What,what does she look like?\n She's like the girl with the blue dress.\n She's a lovely girl, she's got a blue dress.\n Huh?\n"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n AII right, you can't go in, she's not as tall as you, she's not as tall as I, she's not as tall as you.\n She's just a girl, that's"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n Yeah, she's tall.\n Really?\n Yeah.\n She's tall?\n Yeah, that's pretty cool.\n And she's really tall.\n I don't know, it's just, you"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n -Yes, she's tall.\n I've seen her before, she's really tall.\n She's a real beauty, you know?\n -I'm not sure what you mean.\n -No."
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n No, not really.\n What was she doing in the bathroom?\n I don't know.\n Was she really excited?\n I think she's still got a lot of energy.\n Did you guys really"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the girl tall?\n -No.\n -Is she pretty?\n -Yeah.\n I'm not sure if she's a girl or a boy, but I think we should call her the girl with the face, the face,"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n A little bit.\n A little bit tall?\n A little bit.\n It's a bit big for him, I don't know.\n Does he have a boyfriend?\n No.\n Does he?"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n I haven't seen him since the day I first met him.\n My dad's tall, and I'm not sure what I'm doing in the neighborhood.\n That's what they used to say.\n The"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n No, his father was about seven.\n Did he have any brothers?\n I'm sorry, I didn't hear that.\n Did you have a boy?\n I'm not sure I have any other brothers"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n *MOT:\tyes, he's tall.\n *CHI:\the's tall, like my dad.\n *MOT:\the's tall.\n *CHI:\tyes.\n *CHI:"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n Does he have a long beard?\n No.\n And he's not wearing a dress.\n And he's not wearing a dress either.\n But he's wearing a dress because he has a long beard."
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n -Yeah, he is.\n -I'm looking for him.\n -He's the best.\n -I'm looking for him.\n -Yes, he's the best.\n -Yeah.\n"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n He's a pretty tall, uh, tall, uh, tall.\n I don't think he's a tall boy.\n Yeah, but, uh, I've heard they used to be older, and they"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n -Yes, he is.\n What's the boy's name?\n -I don't know.\n -I'm not sure, but I'm pretty sure.\n -What's the boy's name?"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n -Yes, he's quite tall.\n -Yes, he's really tall.\n -And what does he do?\n -He's quite tall, he's quite tall.\n -Yes, he's"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the boy tall?\n A lot taller.\n He's not very tall.\n He's a boy, isn't he?\n He's a young boy.\n Are you an old man?\n Yeah, I'm a son to"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n Uh, yeah.\n I think so.\n I've been waiting for a month, but I'm not sure how to make it.\n Well, I, uh, we're not sure if you want me"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n I think he's tall.\n Yeah, I think he's taller.\n I'm just glad he's tall.\n You know, if he's tall, he's a guy I'm sure he's a"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n What?\n Is this the tallest?\n Is it?\n I was thinking of going to the library next year.\n I'm just not sure how I could do that, but I'm sure it'll"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n -Yeah, we're probably just about eight.\n -That's strange, right?\n Yeah, we're probably just about nine.\n How do we know we're going to be here?\n Bren"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n - Yeah, I think so.\n Oh, no, no, I'm just trying to figure out how to, uh,\n Is that the person that you want to come up with?\n I think that"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n I think he's really tall.\n And the tall, and I'm really excited.\n Is he tall?\n Yeah, he's tall.\n I'm, I'm really excited.\n I can totally"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n Is he tall?\n Is he tall?\n Does he have a beard?\n Is he a man or a woman?\n Is he a woman?\n Is he a woman?\n Is he a man?"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n Yes, he's tall, that's right.\n And his hair's quite short, isn't it?\n Yeah.\n I mean, it's, I'm not too sure about that.\n It's"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n Uh, yeah.\n No, I think it's a girl.\n She's a girl.\n She's a girl.\n I don't know what you're talking about, but she's in a tough"
+    },
+    {
+        "model": "Talking-Babies/orpo_opt_seqlen_1024_final_checkpoint",
+        "config": {
+            "max_length": 50,
+            "do_sample": true,
+            "temperature": 0.8,
+            "top_k": 50,
+            "top_p": 0.95,
+            "dola_layers": null
+        },
+        "output": "Is the person tall?\n -Yeah. \n That's the tall guy.\n Is he tall?\n No, he's not tall. \n He's not tall.\n I mean, he's got a really big penis.\n -"
+    }
+]
