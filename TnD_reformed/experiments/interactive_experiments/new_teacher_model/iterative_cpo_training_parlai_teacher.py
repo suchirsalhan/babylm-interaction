@@ -285,7 +285,7 @@ class ParlAIDialogueInteractionModel:
             # Create teacher prompts with reference to child continuations
             teacher_inputs = []
             for i, text in enumerate(input_texts):
-                teacher_input = f"{text}\nChild response: {child_continuations[i]}\nImproved response:"
+                teacher_input = f"{text}\nChild response: {child_continuations[i]}\nPlease give Improved response based on the child response:"
                 teacher_inputs.append(teacher_input)
             
             print(f"🔧 Created {len(teacher_inputs)} teacher input prompts")
@@ -469,7 +469,7 @@ class IterativeCPOTrainerWithParlAI:
         self.training_config = training_config
         
         # Define progressive CEFR levels for each iteration
-        self.cefr_levels = ["A2", "B1", "B2", "C1", "C2"]
+        self.cefr_levels = ["C2", "C1", "B2", "B1", "A2"]
         print(f"🎓 Progressive CEFR curriculum: {' → '.join(self.cefr_levels)}")
         
         # Create output directory
@@ -770,7 +770,7 @@ class IterativeCPOTrainerWithParlAI:
 
 def main():
     # Ensure wandb is properly configured
-    os.environ["WANDB_PROJECT"] = "iterative-cpo-training-parlai"
+    os.environ["WANDB_PROJECT"] = "iterative-cpo-training-parlai_reverse_cefr"
     os.environ["WANDB_LOG_MODEL"] = "false"
     
     print(f"🔧 Wandb project: {os.environ.get('WANDB_PROJECT')}")
@@ -784,8 +784,8 @@ def main():
     
     # Output Configuration
     output_config = {
-        "output_dir": "iterative_cpo_training_parlai_teacher_progressive_cefr_opt_1024",
-        "final_json_path": "final_iterative_training_cpo_parlai_teacher_progressive_cefr_opt_1024.json",
+        "output_dir": "iterative_cpo_training_parlai_teacher_progressive_cefr_reverse_opt_1024",
+        "final_json_path": "final_iterative_training_cpo_parlai_teacher_progressive_cefr_reverse_opt_1024.json",
         "num_iterations": 5
     }
     
