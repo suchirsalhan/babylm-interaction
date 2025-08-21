@@ -1,3 +1,17 @@
+# Setup
+
+Iterative CPO Experiments Replication 
+
+```
+python3 -m venv venvs/demo; source venvs/demo/bin/activate
+pip3 install -r requirements.txt
+
+cd experiments
+cd orpo_training
+python3 iterative_cpo_training.py
+```
+
+
 # Custom PPO Trainer Implementation
 
 This repository contains a custom implementation of PPO (Proximal Policy Optimization) trainer for language model training, with specific modifications for teacher-student knowledge distillation.
