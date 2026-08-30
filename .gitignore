@@ -5,3 +5,26 @@
 # Python cache files
 __pycache__/
 output_metrics/
+
+# --- storage-audit 2026-07-30: never commit secrets, venvs, weights, caches ---
+.env
+.tiso_env.sh
+*.pem
+*.key
+id_rsa*
+.push.lock
+venvs/
+demo2/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+wandb/
+*.pt
+*.pt.gz
+*.bin
+*.safetensors
+*.ckpt
+data/shards/
+checkpoints/
+model_checkpoints/
